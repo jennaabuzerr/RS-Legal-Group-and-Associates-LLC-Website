@@ -1,5 +1,5 @@
 {
-  "_help": "Firm-wide details used in the header, footer, contact page and search-engine data. Replace every [bracketed] value. Leave a list empty ([]) to hide it.",
+  "_help": "Firm-wide details used in the header, footer, contact page and search-engine data. Replace every [bracketed] value. Leave a list empty ([]) to hide it. trustSignals: only add facts the attorneys confirm; delete any entry you don't need.",
   "firmName": "[Firm name]",
   "legalName": "[Firm legal name, e.g. ___ LLC]",
   "tagline": "[Short tagline, e.g. practice areas and city]",
@@ -12,16 +12,45 @@
     "state": "[State]",
     "zip": "[ZIP]"
   },
-  "geo": { "latitude": null, "longitude": null },
+  "geo": {
+    "latitude": null,
+    "longitude": null
+  },
   "hours": [
-    { "days": "Monday – Friday", "open": "[9:00 AM]", "close": "[5:00 PM]" },
-    { "days": "Saturday – Sunday", "open": null, "close": null, "note": "Closed" }
+    {
+      "days": "Monday – Friday",
+      "open": "[9:00 AM]",
+      "close": "[5:00 PM]"
+    },
+    {
+      "days": "Saturday – Sunday",
+      "open": null,
+      "close": null,
+      "note": "Closed"
+    }
   ],
   "hoursNote": "[Evening or weekend appointments available by request.]",
   "consultationLabel": "Free consultation",
   "serviceArea": "[City and surrounding counties]",
   "social": [],
-  "trustSignals": [],
+  "trustSignals": [
+    {
+      "value": "[##]",
+      "label": "[Years of combined experience]"
+    },
+    {
+      "value": "[State]",
+      "label": "[Bar admission(s)]"
+    },
+    {
+      "value": "[Name]",
+      "label": "[Professional membership, e.g. state bar section]"
+    },
+    {
+      "value": "[Language]",
+      "label": "[Languages spoken, if relevant]"
+    }
+  ],
   "footerDisclaimer": "[Attorney advertising disclaimer text, to be provided by the attorneys.]",
   "copyrightHolder": "[Firm legal name]"
 }
