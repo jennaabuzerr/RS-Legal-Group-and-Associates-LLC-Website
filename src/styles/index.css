@@ -88,3 +88,29 @@
   }
   .on-dark .eyebrow { @apply text-navy-300; }
 }
+
+/* ---------- Motion ----------
+   Calm, short and purposeful. Everything here only runs when <html> has the
+   `motion` class, which index.html adds unless the visitor prefers reduced motion. */
+@layer components {
+  .motion .reveal {
+    transition: opacity 700ms cubic-bezier(0.2, 0.7, 0.2, 1), transform 700ms cubic-bezier(0.2, 0.7, 0.2, 1);
+    transition-delay: var(--reveal-delay, 0ms);
+  }
+  .motion .reveal:not(.is-visible) {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  /* FAQ: animate the answer's height open and closed (Chromium/Safari; others open instantly). */
+  .motion details::details-content {
+    block-size: 0;
+    overflow-y: clip;
+    transition: block-size 350ms ease, content-visibility 350ms allow-discrete;
+  }
+  .motion details[open]::details-content { block-size: auto; }
+  .motion .faq-answer { animation: faq-in 350ms ease both; }
+  details:not([open]) .faq-answer { animation: none; }
+  @keyframes faq-in { from { opacity: 0; transform: translateY(-4px); } }
+}
+:root { interpolate-size: allow-keywords; }

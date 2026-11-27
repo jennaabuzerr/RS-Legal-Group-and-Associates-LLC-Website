@@ -11,7 +11,7 @@ const tones = {
 export default function Section({ tone = 'light', narrow = false, className = '', id, labelledBy, children }) {
   return (
     <section id={id} aria-labelledby={labelledBy} className={`py-16 sm:py-20 lg:py-24 ${tones[tone]} ${className}`}>
-      <Container narrow={narrow}>{children}</Container>
+      <Container narrow={narrow} className="reveal">{children}</Container>
     </section>
   )
 }
