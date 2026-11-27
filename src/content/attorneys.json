@@ -1,0 +1,33 @@
+{
+  "_help": "One entry per attorney. Each gets a bio page at /attorneys/<slug>. Put headshots in public/images/attorneys/ and set 'photo' to e.g. /images/attorneys/jane-doe.webp. Only list credentials the attorney confirms.",
+  "items": [
+    {
+      "slug": "attorney-1",
+      "name": "[Attorney name]",
+      "title": "[Title, e.g. Founding Partner]",
+      "photo": null,
+      "photoAlt": "[Attorney name], [title]",
+      "summary": "[One sentence for the attorney card.]",
+      "bio": ["[Bio paragraph 1]", "[Bio paragraph 2]"],
+      "practiceAreas": ["[Practice area 1]"],
+      "education": [{ "school": "[Law school]", "degree": "[J.D.]", "year": "[Year]" }],
+      "barAdmissions": ["[State bar admission]"],
+      "memberships": ["[Professional association]"],
+      "email": null
+    },
+    {
+      "slug": "attorney-2",
+      "name": "[Attorney name]",
+      "title": "[Title, e.g. Founding Partner]",
+      "photo": null,
+      "photoAlt": "[Attorney name], [title]",
+      "summary": "[One sentence for the attorney card.]",
+      "bio": ["[Bio paragraph 1]", "[Bio paragraph 2]"],
+      "practiceAreas": ["[Practice area 2]"],
+      "education": [{ "school": "[Law school]", "degree": "[J.D.]", "year": "[Year]" }],
+      "barAdmissions": ["[State bar admission]"],
+      "memberships": ["[Professional association]"],
+      "email": null
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import { Head } from 'vite-react-ssg'
+import Seo from '../components/seo/Seo.jsx'
 import Section from '../components/ui/Section.jsx'
 import Heading from '../components/ui/Heading.jsx'
 import Button from '../components/ui/Button.jsx'
@@ -27,10 +27,7 @@ const swatches = [
 export default function Styleguide() {
   return (
     <>
-      <Head>
-        <title>Design system</title>
-        <meta name="robots" content="noindex, nofollow" />
-      </Head>
+      <Seo title="Design system" noindex />
 
       <Section>
         <Heading level={1} size="display" eyebrow="Design system">Navy, ivory and burgundy</Heading>

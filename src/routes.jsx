@@ -12,6 +12,7 @@ export const routes = [
     children: [
       { index: true, element: <Home /> },
       { path: 'styleguide', element: <Styleguide /> },
+      { path: '404', element: <NotFound /> },
       { path: '*', element: <NotFound /> },
     ],
   },

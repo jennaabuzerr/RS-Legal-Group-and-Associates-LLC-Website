@@ -1,0 +1,46 @@
+{
+  "_help": "Text for the Home page. Replace every [bracketed] value.",
+  "seo": {
+    "title": "[Practice area] Lawyers in [City], [State] | [Firm name]",
+    "description": "[One or two sentences, under 160 characters: who the firm helps, with what, and where. Include the city.]"
+  },
+  "hero": {
+    "eyebrow": "[City], [State]",
+    "heading": "[Clear promise in a few words, e.g. what the firm helps people do]",
+    "subheading": "[One or two sentences on who the firm serves and what makes working with them different.]",
+    "image": null,
+    "imageAlt": "[Describe the photo, e.g. the attorneys in their office]"
+  },
+  "intro": {
+    "eyebrow": "About the firm",
+    "heading": "[Short heading about the firm's approach]",
+    "body": [
+      "[A short paragraph introducing the firm: how long it has served the community and how the attorneys work with clients.]",
+      "[A second short paragraph, optional.]"
+    ],
+    "link": { "label": "More about the firm", "to": "/about" }
+  },
+  "practiceAreas": {
+    "eyebrow": "Practice areas",
+    "heading": "How we can help",
+    "intro": "[One sentence introducing the firm's practice areas.]"
+  },
+  "attorneys": {
+    "eyebrow": "Our attorneys",
+    "heading": "[Heading for the attorneys section]",
+    "intro": "[One sentence introducing the attorneys.]"
+  },
+  "process": {
+    "eyebrow": "What to expect",
+    "heading": "What happens when you contact us",
+    "steps": [
+      { "title": "[Reach out]", "body": "[Call or send the form. Say how quickly the firm responds.]" },
+      { "title": "[Free consultation]", "body": "[What happens in the first conversation and how long it takes.]" },
+      { "title": "[A clear plan]", "body": "[What the client leaves with: options, next steps, fees explained.]" }
+    ]
+  },
+  "cta": {
+    "heading": "[Closing call to action, e.g. Talk to an attorney today]",
+    "body": "[One sentence encouraging the visitor to call or request a free consultation.]"
+  }
+}
