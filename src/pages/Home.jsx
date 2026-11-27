@@ -71,7 +71,11 @@ export default function Home() {
           </div>
           <ReviewsMarquee items={reviews.items} />
           <p className="mt-8 text-center text-lg">{reviews.disclaimer}</p>
-          {reviews.link.url && <Button href={reviews.link.url} variant="outline">{reviews.link.label}</Button>}
+          {reviews.link.url && (
+            <div className="mt-6">
+              <Button to={reviews.link.url} variant="outline">{reviews.link.label}</Button>
+            </div>
+          )}
         </Section>
       )}
       <CtaBanner {...home.cta} />
