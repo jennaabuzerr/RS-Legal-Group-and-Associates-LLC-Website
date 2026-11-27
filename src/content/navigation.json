@@ -1,0 +1,14 @@
+{
+  "_help": "Links shown in the header and footer. 'to' is the page address.",
+  "main": [
+    { "label": "Practice Areas", "to": "/practice-areas" },
+    { "label": "Attorneys", "to": "/attorneys" },
+    { "label": "About", "to": "/about" },
+    { "label": "FAQ", "to": "/faq" },
+    { "label": "Contact", "to": "/contact" }
+  ],
+  "legal": [
+    { "label": "Privacy Policy", "to": "/privacy-policy" },
+    { "label": "Disclaimer", "to": "/disclaimer" }
+  ]
+}
