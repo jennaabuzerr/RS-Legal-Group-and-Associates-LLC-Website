@@ -1,5 +1,17 @@
 {
   "_help": "One entry per attorney. Each gets a bio page at /attorneys/<slug>. Put headshots in public/images/attorneys/ and set 'photo' to e.g. /images/attorneys/jane-doe.webp. Only list credentials the attorney confirms.",
+  "page": {
+    "seo": {
+      "title": "Our Attorneys | [Firm name], [City], [State]",
+      "description": "[Under 160 characters introducing the firm's attorneys.]"
+    },
+    "heading": "[Heading for the attorneys page]",
+    "intro": "[One or two sentences about the attorneys and how they work with clients.]",
+    "cta": {
+      "heading": "[Closing call to action]",
+      "body": "[One sentence inviting the visitor to call or request a free consultation.]"
+    }
+  },
   "items": [
     {
       "slug": "attorney-1",
