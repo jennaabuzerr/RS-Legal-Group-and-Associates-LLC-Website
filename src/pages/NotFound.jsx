@@ -3,6 +3,7 @@ import Section from '../components/ui/Section.jsx'
 import Heading from '../components/ui/Heading.jsx'
 import Button from '../components/ui/Button.jsx'
 
+
 export default function NotFound() {
   return (
     <>
