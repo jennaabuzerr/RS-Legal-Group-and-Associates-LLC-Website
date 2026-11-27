@@ -1,32 +1,89 @@
 {
   "_help": "One entry per practice area. Each entry gets its own page at /practice-areas/<slug>. 'slug' is the web address: lowercase words joined by hyphens, e.g. family-law. Add or remove entries freely.",
+  "page": {
+    "seo": {
+      "title": "Practice Areas | [Firm name], [City], [State]",
+      "description": "[Under 160 characters: the legal areas the firm handles and the city it serves.]"
+    },
+    "heading": "[Heading for the practice areas page]",
+    "intro": "[One or two sentences introducing the kinds of matters the firm handles.]",
+    "cta": {
+      "heading": "[Not sure which area fits your situation?]",
+      "body": "[One sentence inviting the visitor to call or request a free consultation.]"
+    }
+  },
   "items": [
     {
       "slug": "practice-area-1",
       "title": "[Practice area 1]",
       "summary": "[One or two sentences for the card on the Home and Practice Areas pages.]",
-      "seo": { "title": "[Practice area 1] Lawyer in [City], [State]", "description": "[Under 160 characters describing this practice area and the city.]" },
-      "body": ["[Practice area description, paragraph 1]", "[Paragraph 2]"],
-      "helpWith": ["[Matter type]", "[Matter type]", "[Matter type]"],
-      "faqs": [{ "question": "[Common question about this area]", "answer": "[Answer]" }]
+      "seo": {
+        "title": "[Practice area 1] Lawyer in [City], [State]",
+        "description": "[Under 160 characters describing this practice area and the city.]"
+      },
+      "body": [
+        "[Practice area description, paragraph 1]",
+        "[Paragraph 2]"
+      ],
+      "helpWith": [
+        "[Matter type]",
+        "[Matter type]",
+        "[Matter type]"
+      ],
+      "faqs": [
+        {
+          "question": "[Common question about this area]",
+          "answer": "[Answer]"
+        }
+      ]
     },
     {
       "slug": "practice-area-2",
       "title": "[Practice area 2]",
       "summary": "[One or two sentences for the card on the Home and Practice Areas pages.]",
-      "seo": { "title": "[Practice area 2] Lawyer in [City], [State]", "description": "[Under 160 characters describing this practice area and the city.]" },
-      "body": ["[Practice area description, paragraph 1]", "[Paragraph 2]"],
-      "helpWith": ["[Matter type]", "[Matter type]", "[Matter type]"],
-      "faqs": [{ "question": "[Common question about this area]", "answer": "[Answer]" }]
+      "seo": {
+        "title": "[Practice area 2] Lawyer in [City], [State]",
+        "description": "[Under 160 characters describing this practice area and the city.]"
+      },
+      "body": [
+        "[Practice area description, paragraph 1]",
+        "[Paragraph 2]"
+      ],
+      "helpWith": [
+        "[Matter type]",
+        "[Matter type]",
+        "[Matter type]"
+      ],
+      "faqs": [
+        {
+          "question": "[Common question about this area]",
+          "answer": "[Answer]"
+        }
+      ]
     },
     {
       "slug": "practice-area-3",
       "title": "[Practice area 3]",
       "summary": "[One or two sentences for the card on the Home and Practice Areas pages.]",
-      "seo": { "title": "[Practice area 3] Lawyer in [City], [State]", "description": "[Under 160 characters describing this practice area and the city.]" },
-      "body": ["[Practice area description, paragraph 1]", "[Paragraph 2]"],
-      "helpWith": ["[Matter type]", "[Matter type]", "[Matter type]"],
-      "faqs": [{ "question": "[Common question about this area]", "answer": "[Answer]" }]
+      "seo": {
+        "title": "[Practice area 3] Lawyer in [City], [State]",
+        "description": "[Under 160 characters describing this practice area and the city.]"
+      },
+      "body": [
+        "[Practice area description, paragraph 1]",
+        "[Paragraph 2]"
+      ],
+      "helpWith": [
+        "[Matter type]",
+        "[Matter type]",
+        "[Matter type]"
+      ],
+      "faqs": [
+        {
+          "question": "[Common question about this area]",
+          "answer": "[Answer]"
+        }
+      ]
     }
   ]
 }

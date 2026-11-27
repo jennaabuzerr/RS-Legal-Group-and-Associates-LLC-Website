@@ -8,11 +8,27 @@
       "photo": null,
       "photoAlt": "[Attorney name], [title]",
       "summary": "[One sentence for the attorney card.]",
-      "bio": ["[Bio paragraph 1]", "[Bio paragraph 2]"],
-      "practiceAreas": ["[Practice area 1]"],
-      "education": [{ "school": "[Law school]", "degree": "[J.D.]", "year": "[Year]" }],
-      "barAdmissions": ["[State bar admission]"],
-      "memberships": ["[Professional association]"],
+      "bio": [
+        "[Bio paragraph 1]",
+        "[Bio paragraph 2]"
+      ],
+      "practiceAreas": [
+        "[Practice area 1]",
+        "[Practice area 3]"
+      ],
+      "education": [
+        {
+          "school": "[Law school]",
+          "degree": "[J.D.]",
+          "year": "[Year]"
+        }
+      ],
+      "barAdmissions": [
+        "[State bar admission]"
+      ],
+      "memberships": [
+        "[Professional association]"
+      ],
       "email": null
     },
     {
@@ -22,11 +38,27 @@
       "photo": null,
       "photoAlt": "[Attorney name], [title]",
       "summary": "[One sentence for the attorney card.]",
-      "bio": ["[Bio paragraph 1]", "[Bio paragraph 2]"],
-      "practiceAreas": ["[Practice area 2]"],
-      "education": [{ "school": "[Law school]", "degree": "[J.D.]", "year": "[Year]" }],
-      "barAdmissions": ["[State bar admission]"],
-      "memberships": ["[Professional association]"],
+      "bio": [
+        "[Bio paragraph 1]",
+        "[Bio paragraph 2]"
+      ],
+      "practiceAreas": [
+        "[Practice area 2]",
+        "[Practice area 3]"
+      ],
+      "education": [
+        {
+          "school": "[Law school]",
+          "degree": "[J.D.]",
+          "year": "[Year]"
+        }
+      ],
+      "barAdmissions": [
+        "[State bar admission]"
+      ],
+      "memberships": [
+        "[Professional association]"
+      ],
       "email": null
     }
   ]
