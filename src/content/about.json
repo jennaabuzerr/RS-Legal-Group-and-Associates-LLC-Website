@@ -1,0 +1,14 @@
+{
+  "_help": "Text for the About page. Replace every [bracketed] value.",
+  "seo": { "title": "About the Firm | [Firm name]", "description": "[Under 160 characters]" },
+  "heading": "[Heading for the About page]",
+  "intro": "[One or two sentences]",
+  "story": ["[Firm story, paragraph 1]", "[Paragraph 2]"],
+  "values": [
+    { "title": "[Value]", "body": "[One sentence]" },
+    { "title": "[Value]", "body": "[One sentence]" },
+    { "title": "[Value]", "body": "[One sentence]" }
+  ],
+  "community": "[Optional: community involvement]",
+  "cta": { "heading": "[Closing call to action]", "body": "[One sentence]" }
+}
