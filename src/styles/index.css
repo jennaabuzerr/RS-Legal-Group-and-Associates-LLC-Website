@@ -114,3 +114,24 @@
   @keyframes faq-in { from { opacity: 0; transform: translateY(-4px); } }
 }
 :root { interpolate-size: allow-keywords; }
+
+/* ---------- Reviews marquee ---------- */
+/* Unlayered on purpose: these must override Tailwind utilities on the same elements. */
+.motion .reviews-track {
+  animation: reviews-scroll var(--marquee-duration, 40s) linear infinite;
+}
+.motion .reviews-marquee:hover .reviews-track,
+.motion .reviews-marquee:focus-within .reviews-track,
+.motion .reviews-marquee[data-paused] .reviews-track {
+  animation-play-state: paused;
+}
+/* Track holds two identical lists; moving by half (plus half the gap) loops seamlessly. */
+@keyframes reviews-scroll {
+  to { transform: translateX(calc(-50% - 0.75rem)); }
+}
+
+/* No motion (reduced-motion or no JS): a normal swipeable row, no duplicate, no button. */
+html:not(.motion) .reviews-viewport { overflow-x: auto; mask-image: none; scroll-snap-type: x mandatory; }
+html:not(.motion) .reviews-viewport li { scroll-snap-align: start; }
+html:not(.motion) .reviews-copy,
+html:not(.motion) .reviews-controls { display: none; }

@@ -5,6 +5,14 @@ import Button from '../components/ui/Button.jsx'
 import Card from '../components/ui/Card.jsx'
 import Prose from '../components/ui/Prose.jsx'
 import Placeholder from '../components/ui/Placeholder.jsx'
+import ReviewsMarquee from '../components/sections/ReviewsMarquee.jsx'
+
+const demoReviews = Array.from({ length: 5 }, (_, i) => ({
+  text: `[Placeholder review ${i + 1}. Real reviews go in src/content/reviews.json.]`,
+  author: '[Reviewer]',
+  rating: 5,
+  source: 'Google',
+}))
 
 // Internal reference page for reviewing the design system. Not linked, not indexed,
 // excluded from sitemap.xml. Remove the route before launch if preferred.
@@ -85,6 +93,12 @@ export default function Styleguide() {
           <Button variant="light" to="/contact">Free consultation</Button>
           <Button variant="outline-light" to="tel:+10000000000">Call [phone]</Button>
         </div>
+      </Section>
+
+      <Section labelledBy="marquee">
+        <Heading id="marquee">Reviews marquee</Heading>
+        <p className="mt-3 mb-8 max-w-prose text-muted">Drifts on its own, pauses on hover or focus, and has a pause button. Still for reduced motion.</p>
+        <ReviewsMarquee items={demoReviews} />
       </Section>
 
       <Section tone="tint" labelledBy="cards">
