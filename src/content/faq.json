@@ -1,0 +1,20 @@
+{
+  "_help": "Text for the FAQ page. Replace every [bracketed] value.",
+  "seo": { "title": "Frequently Asked Questions | [Firm name]", "description": "[Under 160 characters]" },
+  "heading": "[Heading for the FAQ page]",
+  "intro": "[One or two sentences]",
+  "cta": {
+    "heading": "[Call to Action Heading]",
+    "body": "[Call to Action Body]"
+  },
+  "items": [
+        {
+        "question": "[Question]",
+        "answer": "[Answer]"
+        },
+        {
+        "question": "[Question]",
+        "answer": "[Answer]"
+        }
+    ]
+}
