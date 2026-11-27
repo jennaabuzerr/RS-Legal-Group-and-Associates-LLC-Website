@@ -1,6 +1,5 @@
 import { Link, useParams } from 'react-router-dom'
 import practiceAreas from '../content/practice-areas.json'
-import attorneys from '../content/attorneys.json'
 import Seo from '../components/seo/Seo.jsx'
 import JsonLd from '../components/seo/JsonLd.jsx'
 import { faqSchema } from '../lib/schema.js'
@@ -10,7 +9,6 @@ import Prose from '../components/ui/Prose.jsx'
 import PageHeader from '../components/sections/PageHeader.jsx'
 import FaqList from '../components/sections/FaqList.jsx'
 import ConsultationCard from '../components/sections/ConsultationCard.jsx'
-import AttorneyCard from '../components/sections/AttorneyCard.jsx'
 import CtaBanner from '../components/sections/CtaBanner.jsx'
 import NotFound from './NotFound.jsx'
 
@@ -19,7 +17,6 @@ export default function PracticeArea() {
   const area = practiceAreas.items.find((a) => a.slug === slug)
   if (!area) return <NotFound />
 
-  const team = attorneys.items.filter((a) => a.practiceAreas.includes(area.title))
   const others = practiceAreas.items.filter((a) => a.slug !== area.slug)
 
   return (
@@ -62,15 +59,6 @@ export default function PracticeArea() {
           </div>
         </div>
       </Section>
-
-      {team.length > 0 && (
-        <Section labelledBy="team-heading">
-          <Heading id="team-heading" level={2}>Attorneys who handle {area.title.toLowerCase()} matters</Heading>
-          <div className="mt-10 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
-            {team.map((a) => <AttorneyCard key={a.slug} attorney={a} />)}
-          </div>
-        </Section>
-      )}
 
       {others.length > 0 && (
         <Section tone="tint" labelledBy="other-heading">
