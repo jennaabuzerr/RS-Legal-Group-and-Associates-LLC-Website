@@ -1,0 +1,15 @@
+{
+  "_help": "Client reviews shown on the Home page. Only add real reviews, copied word for word, with the reviewer's permission. Check your state bar's rules on testimonials before publishing, and keep the disclaimer below. Set 'show' to false to hide the whole section.",
+  "show": true,
+  "eyebrow": "Client reviews",
+  "heading": "[Heading, e.g. What our clients say]",
+  "disclaimer": "[Testimonial disclaimer required by your state bar, e.g. that past results do not guarantee a similar outcome.]",
+  "link": { "label": "[Read more reviews on Google]", "url": null },
+  "items": [
+    { "text": "[Client review text, copied exactly as written]", "author": "[Reviewer name or initials]", "rating": 5, "source": "Google" },
+    { "text": "[Client review text, copied exactly as written]", "author": "[Reviewer name or initials]", "rating": 5, "source": "Google" },
+    { "text": "[Client review text, copied exactly as written]", "author": "[Reviewer name or initials]", "rating": 5, "source": "Google" },
+    { "text": "[Client review text, copied exactly as written]", "author": "[Reviewer name or initials]", "rating": 5, "source": "Google" },
+    { "text": "[Client review text, copied exactly as written]", "author": "[Reviewer name or initials]", "rating": 5, "source": "Google" }
+  ]
+}

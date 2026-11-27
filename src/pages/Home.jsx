@@ -14,6 +14,8 @@ import PracticeAreaGrid from '../components/sections/PracticeAreaGrid.jsx'
 import AttorneyGrid from '../components/sections/AttorneyGrid.jsx'
 import ProcessSteps from '../components/sections/ProcessSteps.jsx'
 import CtaBanner from '../components/sections/CtaBanner.jsx'
+import reviews from '../content/reviews.json'
+import ReviewsMarquee from '../components/sections/ReviewsMarquee.jsx'
 
 export default function Home() {
   return (
@@ -62,6 +64,20 @@ export default function Home() {
         <ProcessSteps steps={home.process.steps} />
       </Section>
 
+      {reviews.show && (
+        <Section tone="tint" labelledBy="reviews-heading">
+          <div className="mb-12 max-w-2xl">
+            <Heading id="reviews-heading" eyebrow={reviews.eyebrow}>{reviews.heading}</Heading>
+          </div>
+          <ReviewsMarquee items={reviews.items} />
+          <p className="mt-8 text-center text-lg">{reviews.disclaimer}</p>
+          {reviews.link.url && (
+            <div className="mt-6">
+              <Button to={reviews.link.url} variant="outline">{reviews.link.label}</Button>
+            </div>
+          )}
+        </Section>
+      )}
       <CtaBanner {...home.cta} />
     </>
   )
