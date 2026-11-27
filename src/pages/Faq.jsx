@@ -12,7 +12,7 @@ export default function Faq() {
     <>
       <Seo title={faq.seo.title} description={faq.seo.description} />
 
-      <PageHeader 
+      <PageHeader
         eyebrow="FAQ"
         title={faq.heading}
         intro={faq.intro}

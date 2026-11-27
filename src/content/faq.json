@@ -1,6 +1,9 @@
 {
   "_help": "Text for the FAQ page. Replace every [bracketed] value.",
-  "seo": { "title": "Frequently Asked Questions | [Firm name]", "description": "[Under 160 characters]" },
+  "seo": {
+    "title": "Frequently Asked Questions | [Firm name]",
+    "description": "[Under 160 characters]"
+  },
   "heading": "[Heading for the FAQ page]",
   "intro": "[One or two sentences]",
   "cta": {
@@ -8,13 +11,37 @@
     "body": "[Call to Action Body]"
   },
   "items": [
-        {
-        "question": "[Question]",
-        "answer": "[Answer]"
-        },
-        {
-        "question": "[Question]",
-        "answer": "[Answer]"
-        }
-    ]
+    {
+      "question": "[Question]",
+      "answer": "[Answer]"
+    },
+    {
+      "question": "[Question]",
+      "answer": "[Answer]"
+    },
+    {
+      "question": "[Question, e.g. about what the free consultation includes]",
+      "answer": "[Answer]"
+    },
+    {
+      "question": "[Question, e.g. about how fees work]",
+      "answer": "[Answer]"
+    },
+    {
+      "question": "[Question, e.g. about what to bring to the first meeting]",
+      "answer": "[Answer]"
+    },
+    {
+      "question": "[Question, e.g. about how long a typical matter takes]",
+      "answer": "[Answer]"
+    },
+    {
+      "question": "[Question, e.g. about how the firm keeps clients updated]",
+      "answer": "[Answer]"
+    },
+    {
+      "question": "[Question, e.g. about which areas or courts the firm serves]",
+      "answer": "[Answer]"
+    }
+  ]
 }
