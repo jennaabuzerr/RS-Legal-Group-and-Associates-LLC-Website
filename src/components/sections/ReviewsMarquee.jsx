@@ -42,7 +42,7 @@ export default function ReviewsMarquee({ items, secondsPerCard = 7 }) {
 
   return (
     <div className="reviews-marquee group/marquee relative" data-paused={paused || undefined}>
-      <div className="reviews-viewport overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_6%,black_94%,transparent)]">
+      <div className="reviews-viewport reviews-fade overflow-hidden">
         <div className="reviews-track flex w-max gap-6 py-2" style={{ '--marquee-duration': duration }}>
           <ul className="flex gap-6" aria-label="Client reviews">
             {items.map((r, i) => <li key={i}><ReviewCard review={r} /></li>)}

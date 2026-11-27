@@ -125,6 +125,12 @@
 .motion .reviews-marquee[data-paused] .reviews-track {
   animation-play-state: paused;
 }
+/* Cards fade in as they slide on at the right edge and fade out as they leave on the left. */
+.reviews-fade {
+  --fade: 12%;
+  mask-image: linear-gradient(to right, transparent, black var(--fade), black calc(100% - var(--fade)), transparent);
+}
+@media (min-width: 768px) { .reviews-fade { --fade: 20%; } }
 /* Track holds two identical lists; moving by half (plus half the gap) loops seamlessly. */
 @keyframes reviews-scroll {
   to { transform: translateX(calc(-50% - 0.75rem)); }
