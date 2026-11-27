@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 const base =
   'inline-flex items-center justify-center gap-2 rounded-sm font-sans font-semibold no-underline ' +
-  'transition-colors duration-150 disabled:cursor-not-allowed disabled:opacity-60'
+  'transition-colors duration-150 disabled:cursor-not-allowed disabled:border-line disabled:bg-line disabled:text-muted'
 
 const variants = {
   primary: 'bg-burgundy-700 text-white hover:bg-burgundy-800 hover:text-white',

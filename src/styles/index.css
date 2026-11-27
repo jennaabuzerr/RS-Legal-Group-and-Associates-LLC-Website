@@ -6,7 +6,8 @@
   Design tokens. Palette: deep navy, off-white, burgundy accent. No browns.
   Every text/background pair used on the site is WCAG AA or better:
     ink on ivory 14.8:1 · muted on ivory 7.2:1 · burgundy on ivory 9.7:1
-    white on navy-900 16.1:1 · white on burgundy 10.2:1 · burgundy-200 on navy-900 9.3:1
+    white on navy-900 16.1:1 · white on burgundy 10.2:1 · navy-300 on navy-900 7.3:1
+  No pink tints: on navy backgrounds the accent role is taken by navy-300 and white.
 */
 @theme {
   --color-navy-950: #0b1527;
@@ -20,8 +21,6 @@
   --color-burgundy-800: #651925;
   --color-burgundy-700: #7a1f2b;
   --color-burgundy-600: #8e2a36;
-  --color-burgundy-200: #e9b9c0;
-  --color-burgundy-50: #f8eef0;
 
   --color-ivory: #faf9f6;
   --color-ink: #1c2433;
@@ -69,7 +68,7 @@
     outline-offset: 3px;
     border-radius: 2px;
   }
-  .on-dark :focus-visible { outline-color: var(--color-burgundy-200); }
+  .on-dark :focus-visible { outline-color: #ffffff; }
 
   ::selection { @apply bg-navy-100 text-navy-900; }
 
@@ -87,5 +86,5 @@
   .eyebrow {
     @apply font-sans text-xs font-semibold tracking-[0.16em] text-burgundy-700 uppercase;
   }
-  .on-dark .eyebrow { @apply text-burgundy-200; }
+  .on-dark .eyebrow { @apply text-navy-300; }
 }

@@ -18,7 +18,7 @@ const swatches = [
   ['navy-50', 'bg-navy-50', 'text-navy-900'],
   ['burgundy-800', 'bg-burgundy-800', 'text-white'],
   ['burgundy-700 (accent)', 'bg-burgundy-700', 'text-white'],
-  ['burgundy-200', 'bg-burgundy-200', 'text-navy-900'],
+  ['navy-300', 'bg-navy-300', 'text-navy-900'],
   ['ivory (page)', 'bg-ivory border border-line', 'text-ink'],
   ['ink (text)', 'bg-ink', 'text-white'],
   ['muted (text)', 'bg-muted', 'text-white'],
