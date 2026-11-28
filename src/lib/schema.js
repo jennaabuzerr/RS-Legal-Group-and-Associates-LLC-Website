@@ -4,7 +4,7 @@ import { SITE_URL, absoluteUrl } from './seo.js'
 // Builders for schema.org structured data. Unfilled [placeholder] values are
 // dropped so search engines never see bracketed text.
 
-const isReal = (v) => v != null && v !== '' && !/^\[.*\]$/.test(String(v).trim())
+export const isReal = (v) => v != null && v !== '' && !/^\[.*\]$/.test(String(v).trim())
 const isEmpty = (v) =>
   v === undefined ||
   (Array.isArray(v) && v.length === 0) ||
