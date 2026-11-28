@@ -11,6 +11,7 @@ import attorneys from './content/attorneys.json'
 import About from './pages/About.jsx'
 import Faq from './pages/Faq.jsx'
 import Contact from './pages/Contact.jsx'
+import ThankYou from './pages/ThankYou.jsx'
 
 // Every route here is prerendered to its own static HTML file at build time.
 // Dynamic routes (practice areas, attorneys) will add getStaticPaths() built from src/content.
@@ -35,6 +36,8 @@ export const routes = [
       { path: 'about', element: <About /> },
       { path: 'faq', element: <Faq /> },
       { path: 'contact', element: <Contact /> },
+      { path: 'contact', element: <Contact /> },
+      { path: 'contact/thank-you', element: <ThankYou /> },
       { path: 'styleguide', element: <Styleguide /> },
       { path: '404', element: <NotFound /> },
       { path: '*', element: <NotFound /> },

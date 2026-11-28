@@ -4,11 +4,17 @@ import contact from '../../content/contact.json'
 import FormField from './FormField.jsx'
 import Button from '../ui/Button.jsx'
 import validateContact from '../../lib/validateContact.js'
+import { useNavigate } from 'react-router-dom'
+import sendInquiry from '../../lib/sendInquiry.js'
+import site from '../../content/site.json'
 
 export default function ContactForm() {
   const [errors, setErrors] = useState({})
+  const [sending, setSending] = useState(false)
+  const [sendError, setSendError] = useState('')
+  const navigate = useNavigate()
 
-  function handleSubmit(event) {
+  async function handleSubmit(event) {
     event.preventDefault()
     const data = Object.fromEntries(new FormData(event.currentTarget))
     const found = validateContact(data)
@@ -19,8 +25,16 @@ export default function ContactForm() {
       event.currentTarget.elements[firstBad].focus()
       return
     }
-    // Step 4: send `data` to Web3Forms here.
-    console.log('Valid! Ready to send:', data)
+    
+    setSending(true)
+    setSendError('')
+    try {
+      await sendInquiry(data)
+      navigate('/contact/thank-you')
+    } catch (err) {
+      setSendError(err.message)
+      setSending(false)
+    }
   }
 
   return (
@@ -51,6 +65,14 @@ export default function ContactForm() {
       />
 
       <div>
+        {/* Honeypot: hidden from people, but spam bots fill it in and Web3Forms rejects those. */}
+        <input 
+            type="checkbox" 
+            name="botcheck" 
+            className="hidden" 
+            tabIndex={-1} 
+            autoComplete="off" 
+            aria-hidden="true" />  
         <label className="flex gap-3 text-sm text-ink">
           <input
             type="checkbox"
@@ -65,7 +87,15 @@ export default function ContactForm() {
         {errors.acknowledge && <p id="acknowledge-error" className="mt-2 text-sm font-medium text-burgundy-700">{errors.acknowledge}</p>}
       </div>
 
-      <Button type="submit" size="lg">Send message</Button>
+        {sendError && (
+        <p role="alert" className="rounded-sm border border-burgundy-700 bg-white p-4 text-sm text-burgundy-800">
+          {sendError} Please try again, or call us at {site.phone}.
+        </p>
+        )}
+
+      <Button type="submit" size="lg" disabled={sending}>
+        {sending ? 'Sending…' : 'Send message'}
+      </Button>
     </form>
   )
 }
