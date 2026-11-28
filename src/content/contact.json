@@ -1,0 +1,7 @@
+{
+  "_help": "Text for the Contact page. Phone, address and hours come from site.json.",
+  "seo": { "title": "Contact Us | [Firm name], [City], [State]", "description": "[Under 160 characters: how to reach the firm and book a free consultation.]" },
+  "heading": "[Heading, e.g. Request a free consultation]",
+  "intro": "[One or two sentences on what happens after someone gets in touch.]",
+  "notice": "Submitting this form does not create an attorney-client relationship. Please do not include confidential or time-sensitive information."
+}
